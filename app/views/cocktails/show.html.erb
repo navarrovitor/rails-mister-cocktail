@@ -1,7 +1,7 @@
 <h1>
   <strong>Name:</strong>
   <%= @cocktail.name %>
-  <%= cl_image_tag @article.photo, height: 300, width: 400, crop: :fill %>
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 </h1>
 <ul>
 <% @cocktail.doses.each do |dose|%>
