@@ -9,7 +9,6 @@ class DosesController < ApplicationController
     @dose.cocktail = set_cocktail
     if @dose.save
       redirect_to cocktail_path(@cocktail)
-      puts 'New dose created!'
     else
       render :new
     end
@@ -18,6 +17,7 @@ class DosesController < ApplicationController
   def destroy
     @dose = Dose.find(params[:id])
     @dose.destroy
+    redirect_to cocktail_path(@dose.cocktail)
   end
 
   private
