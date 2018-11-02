@@ -1,14 +1,14 @@
 .banner {
   color: white;
   text-align: center;
-  height: 500px;
+  height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%);
-  background-image: image-url('drink.jpg');
+  background-image: image-url('drink4.jpg');
 }
 .banner h1 {
   font-size: 50px;
@@ -45,7 +45,9 @@
 }
 
 #li {
+  padding: 0px;
   float: left;
+  margin: 0px 10px 0px 10px;
 }
 
 #li a {
@@ -61,3 +63,12 @@ li a{
 li a:hover {
   text-decoration: none;
 }
+#ul-padding {
+  padding: 0;
+  list-style-type: none;
+}
+#row-right {
+  align-items: center;
+}
+
+
