@@ -50,6 +50,7 @@ group :development, :test do
   gem 'font-awesome-sass', '~> 5.0.9'
   gem 'simple_form'
   gem 'json'
+  gem 'dotenv-rails', groups: [:development, :test]
 end
 
 group :development do
